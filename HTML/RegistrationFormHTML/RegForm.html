@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <hr>
+
+    <h3><b>Provide you information</b></h3>
+    <form action="/submit-form" method="post">
+        <label for="name">Name*</label><br>
+        <input type="text" id="Name" name="Name" maxlength="50" size="30" required><br>
+
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email" maxlength="50" size="30" required><br>
+
+        <label for="phonenumber">Telephone</label><br>
+        <input type="text" id="phoneAreaCode" name="phoneAreaCode" maxlength="3" size="1" required>
+        -
+        <input type="text" id="phonePrefix" name="phonePrefix" maxlength="3" size="1" required>
+        -
+        <input type="text" id="phoneLineNumber" name="phoneLineNumber" maxlength="4" size="2" required><br><br>
+
+        <label for="dob">DOB*</label><br>
+        <input type="date" id="dob" name="dob" min="1900-01-01" max="2024-09-14" required><br>
+
+        <label for="Male">
+            Gender<br>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            Male
+          </label>
+          <label for="Female">
+            <input type="radio" id="Female" name="Gender" value="Female">
+            Female
+          </label>
+          <label for="Other">
+            <input type="radio" id="Other" name="Gender" value="Other">
+            Other
+          </label>
+        <br><br>  
+        <label for="HouseholdSize">Household Size</label><br>
+        <input type="text" id="HouseholdSize" name="HouseholdSize" size="4" maxlength="20"><br>
+
+        <label for="income">Annual Income</label>
+        <select id="dropdown" name="income">
+            <option value="income1">Less than $40k</option>
+            <option value="income2">$40k-$65k</option>
+            <option value="income3">$65k-$100k</option>
+            <option value="income4">Over $100k</option>
+        </select>
+
+        <br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="50" maxlength="500"></textarea><br><br>
+
+        <label for="password">Password*</label><br>
+        <input type="text" id="pass" name="pass" maxlength="50" size="30" required><br>
+        <label for="passmatch">Confirm Password*</label><br>
+        <input type="text" id="passmatch" name="passmatch" maxlength="50" size="30" required>
+
+        <br><br>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">By signing up, you agree the the </label>       
+        <a href="https://example.com">Terms of Service</a>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p></p>
+</body>
+</html>

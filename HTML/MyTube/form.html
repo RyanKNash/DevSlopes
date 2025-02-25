@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./iconfolder/icon.file.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <title>Video Upload</title>
+</head>
+
+<body id="form">
+    <header class="header">
+        <h1>Add New Video</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pages/music.html">Music</a>
+            <a href="pages/sporttricks.html">Sport Tricks</a>
+            <a href="pages/art.html">Art</a>
+            <a href="form.html">Upload Video</a>
+          </nav>
+    </header>
+
+    <div class="container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-section">
+                <label for="videoTitle">Video Title: </label>
+                    <input type="text" id="videoTitle" name="videoTitle" required placeholder="Input title here">
+                </div>
+                <div class="form-section">
+                    <label for="description">Description: </label>
+                    <textarea id="description" name="description" rows="5" required placeholder="Input description here"></textarea>
+                </div>
+                <div class="form-section">
+                    <label for="videoFile">Video: </label>
+                    <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
+                </div>
+                <div class="form-section">
+                    <label for="collection">Choose Collection</label>
+                    <select id="collection" name="collection" required>
+                        <option value="" disabled selected>Choose Collection</option>
+                        <option value="collection1">Music</option>
+                        <option value="collection2">Sports Tricks</option>
+                        <option value="collection3">Art</option>
+                    </select>
+                </div>
+                <div class="form-section">
+                    <label>Visibility</label>
+                    <input type="radio" id="public" name="visibility" value="public" required>
+                    <label for="public">Public</label>
+                    <input type="radio" id="private" name="visibility" value="private">
+                    <label for="private">Private</label>
+                </div>
+                <div class="button-wrapper">
+                    <button type="submit">Upload Video</button>
+                </div>
+        </form>
+    </div>
+    <hr>
+    <footer>
+        &copy; Copyright
+    </footer>
+</body>
+</html>
