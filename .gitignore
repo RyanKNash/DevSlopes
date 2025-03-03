@@ -1,0 +1,100 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS specific metadata
+Icon?
+._*
+
+# macOS Thumbnails
+*.Spotlight-V100*
+*.Trashes*
+
+# General temporary files
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# Ignore log files and OS backup files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.pid
+*.seed
+*.sqlite3
+*.lock
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+.idea/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.project
+*.classpath
+*.settings/
+*.factorypath
+target/
+bin/
+
+# VS Code workspace settings
+.vscode/
+*.code-workspace
+
+# JetBrains (IntelliJ, PyCharm, WebStorm)
+.idea/
+*.iml
+out/
+
+# Build artifacts
+dist/
+build/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.out
+*.app
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Image thumbnails
+*.tmb
+*.thumb
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Secrets and Credentials (Customize as needed)
+.env
+.env.local
+.env.development
+.env.production
+config.json
+config.yml
